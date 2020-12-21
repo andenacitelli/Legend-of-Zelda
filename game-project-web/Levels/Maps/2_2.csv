@@ -1,0 +1,23 @@
+block,0.0,0.0,0.0,0.0,false,walls
+block,2,2,0,0,none,empty
+block,7,0,0,0,door,updoor
+block,7,9,0,0,door,downbomb
+block,0,4.5,0,0,door,leftdoor
+block,14,4.5,0,0,???,rightlock
+block,3,3,0,0,rigid,raisedtile
+block,4,3,0,0,rigid,raisedtile
+block,3,7,0,0,rigid,raisedtile
+block,4,7,0,0,rigid,raisedtile
+block,7,5,0,0,rigid,raisedtile
+block,8,5,0,0,rigid,raisedtile
+block,11,3,0,0,rigid,raisedtile
+block,12,3,0,0,rigid,raisedtile
+block,11,7,0,0,rigid,raisedtile
+block,12,7,0,0,rigid,raisedtile
+item,12,5,16,4,yellowmap,hud
+enemy,5,2,0,0,gel,,
+enemy,5,8,0,0,gel,,
+enemy,8,4,0,0,gel,,
+enemy,8,6,0,0,gel,,
+enemy,13,5,0,0,gel,,
+# player,1.5,5,0,0

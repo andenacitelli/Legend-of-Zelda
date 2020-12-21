@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F828D13A-6C11-4754-8CD1-52E41A475105}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>game_project</RootNamespace>
+    <AssemblyName>game-project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>WindowsGL</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;LINUX</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;LINUX</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CollisionDetection\IColliderBounds.cs" />
+    <Compile Include="CollisionDetection\ManualColliderBounds.cs" />
+    <Compile Include="CollisionDetection\SpriteColliderBounds.cs" />
+    <Compile Include="CollisionResponse\BladeTrapCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\BombCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\DoorCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\FireballCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\InvisibleBlockCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\KeeseCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\ItemCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\BoomerangCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\WideLinkCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\MovableKeyCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\SwordBeamCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\SwordCollisionResponse.cs" />
+    <Compile Include="GameObjects\GUI\XPBarFill.cs" />
+    <Compile Include="GameObjects\GUI\XPBarBlank.cs" />
+    <Compile Include="GameObjects\GUI\XPDisplayManager.cs" />
+    <Compile Include="Commands\CommandDebugFPS.cs" />
+    <Compile Include="GameContent.cs" />
+    <Compile Include="Commands\CommandBossRush.cs" />
+    <Compile Include="GameObjects\Block\InivisbleBlock.cs" />
+    <Compile Include="GameObjects\GUI\Minimap.cs" />
+    <Compile Include="GameObjects\GUI\MinimapDisplay.cs" />
+    <Compile Include="GameObjects\GUI\ItemSelector.cs" />
+    <Compile Include="GameObjects\GUI\SelectedWeapon.cs" />
+    <Compile Include="GameObjects\GUI\SelectedItem.cs" />
+    <Compile Include="GameObjects\GUI\HUDCompass.cs" />
+    <Compile Include="GameObjects\GUI\ItemSelectorDisplayManager.cs" />
+    <Compile Include="GameObjects\GUI\SelectedWeaponDisplayManager.cs" />
+    <Compile Include="GameObjects\GUI\SelectedItemDisplayManager.cs" />
+    <Compile Include="GameObjects\GUI\HUDCompassDisplayManager.cs" />
+    <Compile Include="GameObjects\GUI\HUDMapDisplayManager.cs" />
+    <Compile Include="GameObjects\GUI\HUDMap.cs" />
+    <Compile Include="GameObjects\GUI\MapTile.cs" />
+    <Compile Include="GameObjects\GUI\MapDisplay.cs" />
+    <Compile Include="GameObjects\GUI\Map.cs" />
+    <Compile Include="GameObjects\GUI\HeartDisplayManager.cs" />
+    <Compile Include="GameObjects\GUI\Heart.cs" />
+    <Compile Include="GameObjects\Link\DragAndReset.cs" />
+    <Compile Include="GameObjects\Link\LinkXPManager.cs" />
+    <Compile Include="GameObjects\HealthManagement.cs" />
+    <Compile Include="GameObjects\Link\Sword.cs" />
+    <Compile Include="GameObjects\Link\LinkLevelBehavior.cs" />
+    <Compile Include="CollisionResponse\WallCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\SpecialItemCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\MovableCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\EnemyCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\LinkCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\FirstItemCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\StairsCollisionResponse.cs" />
+    <Compile Include="CollisionResponse\RigidCollisionResponse.cs" />
+    <Compile Include="Commands\CommandDebugColliders.cs" />
+    <Compile Include="Commands\CommandItemSelection.cs" />
+    <Compile Include="Commands\CommandPlayPause.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controllers\Input.cs" />
+    <Compile Include="ECS\Components\Collider.cs" />
+    <Compile Include="CollisionResponse\CollisionResponse.cs" />
+    <Compile Include="ECS\Components\Text.cs" />
+    <Compile Include="ECS\Systems\ColliderSystem.cs" />
+    <Compile Include="ECS\Systems\TextSystem.cs" />
+    <Compile Include="GameObjects\Block\BlockMovement.cs" />
+    <Compile Include="GameObjects\Block\Door.cs" />
+    <Compile Include="GameObjects\Block\Wall.cs" />
+    <Compile Include="GameObjects\Block\Block.cs" />
+    <Compile Include="GameObjects\Enemy\Aquamentus\AquamentusHealthManagement.cs" />
+    <Compile Include="GameObjects\Enemy\EnemyFreeze.cs" />
+    <Compile Include="GameObjects\Enemy\EnemyHealthManagement.cs" />
+    <Compile Include="GameObjects\Enemy\EnemyKnockback.cs" />
+    <Compile Include="GameObjects\Enemy\Stalfo\StalfoHealthManagement.cs" />
+    <Compile Include="GameObjects\GUI\ManualDrawing.cs" />
+    <Compile Include="GameObjects\GUI\Backdrop.cs" />
+    <Compile Include="GameObjects\GUI\BackdropBehavior.cs" />
+    <Compile Include="GameObjects\Items\HUDItem.cs" />
+    <Compile Include="GameObjects\Items\ItemDeletionTimer.cs" />
+    <Compile Include="GameObjects\Items\ItemInventory.cs" />
+    <Compile Include="GameObjects\Link\LinkInventory.cs" />
+    <Compile Include="GameObjects\Layout\LevelParent.cs" />
+    <Compile Include="GameObjects\Layout\LevelParentBehavior.cs" />
+    <Compile Include="GameObjects\Link\LinkBehavior.cs" />
+    <Compile Include="GameObjects\Items\ItemStatePattern.cs" />
+    <Compile Include="GameObjects\Items\Fire\FireStatePattern.cs" />
+    <Compile Include="GameObjects\Projectiles\Projectile.cs" />
+    <Compile Include="GameObjects\Projectiles\SwordProjectile.cs" />
+    <Compile Include="GameObjects\Projectiles\SwordProjectileMovement.cs" />
+    <Compile Include="GameObjects\Writing\HUDBossRushManager.cs" />
+    <Compile Include="GameObjects\Writing\HUDKeyManager.cs" />
+    <Compile Include="GameObjects\Writing\HUDBombManager.cs" />
+    <Compile Include="GameObjects\Writing\HUDRupeeManager.cs" />
+    <Compile Include="GameObjects\Writing\HUDTextBossRush.cs" />
+    <Compile Include="GameObjects\Writing\HUDTextKey.cs" />
+    <Compile Include="GameObjects\Writing\HUDTextBomb.cs" />
+    <Compile Include="GameObjects\Writing\HUDTextRupee.cs" />
+    <Compile Include="GameObjects\Writing\RetryDialog.cs" />
+    <Compile Include="GameObjects\Writing\TextShadowEntity.cs" />
+    <Compile Include="GameObjects\Writing\TextEntity.cs" />
+    <Compile Include="GameObjects\Poof.cs" />
+    <Compile Include="GameObjects\Enemy\Aquamentus\AquamentusMovement.cs" />
+    <Compile Include="GameObjects\Enemy\Gel\GelMovement.cs" />
+    <Compile Include="GameObjects\Enemy\Goriya\GoriyaBehavior.cs" />
+    <Compile Include="GameObjects\Enemy\Goriya\Goriya.cs" />
+    <Compile Include="GameObjects\Enemy\Aquamentus\AquamentusAttack.cs" />
+    <Compile Include="GameObjects\Enemy\Keese\KeeseMovement.cs" />
+    <Compile Include="GameObjects\Enemy\Keese\Keese.cs" />
+    <Compile Include="GameObjects\Enemy\Stalfo\StalfoStatePattern.cs" />
+    <Compile Include="GameObjects\Enemy\Stalfo\Stalfo.cs" />
+    <Compile Include="GameObjects\Enemy\Stalfo\StalfoMovement.cs" />
+    <Compile Include="GameObjects\Enemy\Aquamentus\Aquamentus.cs" />
+    <Compile Include="GameObjects\Enemy\Gel\Gel.cs" />
+    <Compile Include="GameObjects\Enemy\Rope\Rope.cs" />
+    <Compile Include="GameObjects\Enemy\BladeTrap\BladeTrap.cs" />
+    <Compile Include="GameObjects\Enemy\BladeTrap\BladeTrapMovement.cs" />
+    <Compile Include="GameObjects\Enemy\Enemy.cs" />
+    <Compile Include="GameObjects\Items\Bomb\BombBehaviorScript.cs" />
+    <Compile Include="GameObjects\Items\Bomb\BombExplosionBehaviorScript.cs" />
+    <Compile Include="GameObjects\Items\Bomb\BombExplosion.cs" />
+    <Compile Include="GameObjects\Link\LinkHealthManagement.cs" />
+    <Compile Include="GameObjects\Link\LinkKnockback.cs" />
+    <Compile Include="GameObjects\Link\TransformTest.cs" />
+    <Compile Include="GameObjects\Projectiles\Boomerang.cs" />
+    <Compile Include="GameObjects\Projectiles\BoomerangMovement.cs" />
+    <Compile Include="GameObjects\Enemy\WallMaster\WallMaster.cs" />
+    <Compile Include="GameObjects\Enemy\WallMaster\WallMasterMovement.cs" />
+    <Compile Include="GameObjects\Projectiles\FireballMovement.cs" />
+    <Compile Include="GameObjects\Projectiles\Fireball.cs" />
+    <Compile Include="GameObjects\Items\ItemMovement.cs" />
+    <Compile Include="GameObjects\Enemy\EnemyStatePattern.cs" />
+    <Compile Include="GameObjects\Items\Fairy\FairyMotionScript.cs" />
+    <Compile Include="GameObjects\Items\MovingItem.cs" />
+    <Compile Include="ECS\Components\BehaviorScript.cs" />
+    <Compile Include="ECS\Systems\BehaviorScriptSystem.cs" />
+    <Compile Include="Commands\CommandExit.cs" />
+    <Compile Include="Commands\CommandReset.cs" />
+    <Compile Include="GameObjects\Items\Item.cs" />
+    <Compile Include="GameObjects\NPC\NPC.cs" />
+    <Compile Include="GameObjects\PoofBehavior.cs" />
+    <Compile Include="Levels\BossRush.cs" />
+    <Compile Include="Levels\GameStateManager.cs" />
+    <Compile Include="Levels\Level.cs" />
+    <Compile Include="Levels\LevelManager.cs" />
+    <Compile Include="RectangleF.cs" />
+    <Compile Include="Sounds\Sound.cs" />
+    <Compile Include="Sprites\Raster.cs" />
+    <Compile Include="Sprites\SpriteFactories\HUDSpriteFactory.cs" />
+    <Compile Include="Sprites\SpriteFrames\HUDSpriteFrames.cs" />
+    <Compile Include="Sprites\Texture2DStorage.cs" />
+    <Compile Include="Sprites\SpriteFactories\LevelMapSpriteFactory.cs" />
+    <Compile Include="Sprites\SpriteFactories\LinkItemSpriteFactory.cs" />
+    <Compile Include="Sprites\SpriteFactories\NPCSpriteFactory.cs" />
+    <Compile Include="Sprites\SpriteFrames\NPCSpriteFrames.cs" />
+    <Compile Include="Sprites\SpriteFrames\BossesSpriteFrames.cs" />
+    <Compile Include="Sprites\SpriteFrames\EnemySpriteFrames.cs" />
+    <Compile Include="Sprites\SpriteFrames\LevelMapSpriteFrames.cs" />
+    <Compile Include="Sprites\SpriteFrames\LinkItemSpriteFrames.cs" />
+    <Compile Include="Sprites\SpriteFrames\ItemSpriteFrames.cs" />
+    <Compile Include="Sprites\SpriteFactories\ItemSpriteFactory.cs" />
+    <Compile Include="Sprites\SpriteFactories\BossSpriteFactory.cs" />
+    <Compile Include="Sprites\SpriteFactories\LinkSpriteFactory.cs" />
+    <Compile Include="Sprites\SpriteFactories\EnemySpriteFactory.cs" />
+    <Compile Include="Sprites\SpriteFrames\LinkSpriteFrames.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="ECS\Components\Sprite.cs" />
+    <Compile Include="ECS\Components\Transform.cs" />
+    <Compile Include="Controllers\KeyboardController.cs" />
+    <Compile Include="ECS\Systems\BaseSystem.cs" />
+    <Compile Include="ECS\Systems\SpriteSystem.cs" />
+    <Compile Include="ECS\Systems\TransformSystem.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="ECS\Component.cs" />
+    <Compile Include="ECS\Entity.cs" />
+    <Compile Include="GameObjects\Link\Link.cs" />
+    <Compile Include="ECS\Scene.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprites\BasicSprite.cs" />
+    <Compile Include="StatePattern\EnemyState\StalfoState.cs" />
+    <Compile Include="StatePattern\EnemyState\EnemyState.cs" />
+    <Compile Include="StatePattern\ItemState\ItemState.cs" />
+    <Compile Include="StatePattern\ItemState\FireState.cs" />
+    <Compile Include="Fonts\Font.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.7.0.1708, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\SDL2.dll">
+      <Link>x86\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\SDL2.dll">
+      <Link>x64\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\soft_oal.dll">
+      <Link>x86\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\soft_oal.dll">
+      <Link>x64\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libSDL2-2.0.so.0">
+      <Link>x86\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libSDL2-2.0.so.0">
+      <Link>x64\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libopenal.so.1">
+      <Link>x86\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libopenal.so.1">
+      <Link>x64\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libSDL2-2.0.0.dylib">
+      <Link>libSDL2-2.0.0.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libopenal.1.dylib">
+      <Link>libopenal.1.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll.config">
+      <Link>MonoGame.Framework.dll.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="app.manifest" />
+    <None Include="Content\Maps\0_0.csv" />
+    <None Include="Content\Maps\0_2.csv" />
+    <None Include="Content\Maps\1_0.csv" />
+    <None Include="Content\Maps\1_2.csv" />
+    <None Include="Content\Maps\1_3.csv" />
+    <None Include="Content\Maps\1_5.csv" />
+    <None Include="Content\Maps\2_0.csv" />
+    <None Include="Content\Maps\2_1.csv" />
+    <None Include="Content\Maps\2_2.csv" />
+    <None Include="Content\Maps\2_3.csv" />
+    <None Include="Content\Maps\2_4.csv" />
+    <None Include="Content\Maps\2_5.csv" />
+    <None Include="Content\Maps\3_2.csv" />
+    <None Include="Content\Maps\3_3.csv" />
+    <None Include="Content\Maps\3_5.csv" />
+    <None Include="Content\Maps\4_1.csv" />
+    <None Include="Content\Maps\4_2.csv" />
+    <None Include="Content\Maps\5_1.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sounds\Effects\" />
+    <Folder Include="StatePattern\LinkState\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

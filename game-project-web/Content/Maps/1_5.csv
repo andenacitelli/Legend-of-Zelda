@@ -1,0 +1,10 @@
+block,0.0,0.0,0.0,0.0,wall,walls
+block,2,2,0,0,none,empty
+block,7,0,0,0,wall,upwall
+block,7,9,0,0,wall,downwall
+block,0,4.5,0,0,wall,leftwall
+block,14,4.5,0,0,door,rightdoor
+enemy,3,3,0,0,keese,,
+enemy,5,3,0,0,keese,,
+enemy,3,7,0,0,keese,,
+# player,13.5,5,0,0

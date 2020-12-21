@@ -1,0 +1,14 @@
+block,0.0,0.0,0.0,0.0,wall,walls
+block,2,2,0,0,none,empty
+block,7,0,0,0,wall,upwall
+block,7,9,0,0,door,downbomb
+block,0,4.5,0,0,true,leftdoor
+block,14,4.5,0,0,true,rightdoor
+block,4,4,0,0,rigid,raisedtile
+block,4,6,0,0,rigid,raisedtile
+block,11,4,0,0,rigid,raisedtile
+block,11,6,0,0,rigid,raisedtile
+enemy,8,6,0,0,goriya,right,
+enemy,10,4,0,0,goriya,right,
+enemy,10,6,0,0,goriya,right,
+player,1.5,5,0,0

@@ -1,0 +1,11 @@
+block,0.0,0.0,0.0,0.0,wall,walls
+block,2,2,0,0,none,empty
+block,7,0,0,0,wall,upwall
+block,7,9,0,0,door,downdoor
+block,0,4.5,0,0,door,leftboss
+block,14,4.5,0,0,door,rightdoor
+block,7,5,0,0,movableRK,raisedtile
+enemy,3,3,0,0,gel,,
+enemy,5,2,0,0,gel,,
+enemy,12,3,0,0,gel,,
+player,7.5,9,0,0

@@ -1,0 +1,16 @@
+block,0.0,0.0,0.0,0.0,wall,walls
+block,2,2,0,0,none,empty
+block,7,0,0,0,door,updoor
+block,7,9,0,0,door,downdoor
+block,0,4.5,0,0,door,leftwall
+block,14,4.5,0,0,door,rightwall
+block,7,4,0,0,rigid,raisedtile
+block,7,5,0,0,rigid,raisedtile
+block,7,6,0,0,rigid,raisedtile
+block,8,4,0,0,rigid,raisedtile
+block,8,5,0,0,rigid,raisedtile
+block,8,6,0,0,rigid,raisedtile
+enemy,6,4,0,0,stalfo,,
+enemy,9,4,0,0,stalfo,,
+enemy,10,4,0,0,stalfo,,
+# player,7.5,9,0,0

@@ -1,0 +1,72 @@
+block,0.0,0.0,0.0,0.0,none,itemroom
+#walkway left
+block,3,0,0,0,stairs10,invis
+block,2,0,0,0,invis,invis
+block,2,1,0,0,invis,invis
+block,2,2,0,0,invis,invis
+block,2,3,0,0,invis,invis
+block,2,4,0,0,invis,invis
+block,2,5,0,0,invis,invis
+block,4,0,0,0,invis,invis
+block,4,1,0,0,invis,invis
+block,4,2,0,0,invis,invis
+block,4,3,0,0,invis,invis
+block,4,4,0,0,invis,invis
+block,4,5,0,0,invis,invis
+#bottom room top
+block,2,6,0,0,invis,invis
+block,4,6,0,0,invis,invis
+block,5,6,0,0,invis,invis
+block,6,6,0,0,invis,invis
+block,7,6,0,0,invis,invis
+block,8,6,0,0,invis,invis
+block,9,6,0,0,invis,invis
+block,10,6,0,0,invis,invis
+#bottom room left
+block,1,7,0,0,invis,invis
+#bottom room right
+block,12,6,0,0,invis,invis
+block,13,6,0,0,invis,invis
+block,14,7,0,0,invis,invis
+#bottom room floor
+block,2,8,0,0,invis,invis
+block,3,8,0,0,invis,invis
+block,4,8,0,0,invis,invis
+block,5,8,0,0,invis,invis
+block,6,8,0,0,invis,invis
+block,7,8,0,0,invis,invis
+block,8,8,0,0,invis,invis
+block,9,8,0,0,invis,invis
+block,10,8,0,0,invis,invis
+block,11,8,0,0,invis,invis
+block,12,8,0,0,invis,invis
+block,13,8,0,0,invis,invis
+#walkway right
+block,10,5,0,0,invis,invis
+block,12,5,0,0,invis,invis
+#top room floor
+block,7,5,0,0,invis,invis
+block,8,5,0,0,invis,invis
+block,9,5,0,0,invis,invis
+block,13,5,0,0,invis,invis
+#top room left
+block,6,4,0,0,invis,invis
+#top room right
+block,14,4,0,0,invis,invis
+#top room top
+block,7,3,0,0,invis,invis
+block,8,3,0,0,invis,invis
+block,9,3,0,0,invis,invis
+block,10,3,0,0,invis,invis
+block,11,3,0,0,invis,invis
+block,12,3,0,0,invis,invis
+block,13,3,0,0,invis,invis
+#enemies
+enemy,2,5,0,0,keese,,
+enemy,6,5,0,0,keese,,
+enemy,9,5,0,0,keese,,
+enemy,13,5,0,0,keese,,
+#items
+item,8,4,12,0,bow,first
+#test player -- comment out when finished
+player,3,0,0,0

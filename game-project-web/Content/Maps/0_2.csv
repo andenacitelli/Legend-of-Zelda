@@ -1,0 +1,27 @@
+block,0.0,0.0,0.0,0.0,wall,walls
+block,2,2,0,0,none,black
+block,7,0,0,0,wall,upwall
+block,7,9,0,0,wall,downwall
+block,0,4.5,0,0,wall,leftwall
+block,14,4.5,0,0,door,rightdoor
+# row of items
+item,5,4,0,0,fire,
+npc,7.5,4,0,0,oldman2
+item,10,4,0,0,fire,
+# row of invisible blocks
+block,2,4,0,0,invis,invis
+block,3,4,0,0,invis,invis
+block,4,4,0,0,invis,invis
+block,5,4,0,0,invis,invis
+block,6,4,0,0,invis,invis
+block,7,4,0,0,invis,invis
+block,8,4,0,0,invis,invis
+block,9,4,0,0,invis,invis
+block,10,4,0,0,invis,invis
+block,11,4,0,0,invis,invis
+block,12,4,0,0,invis,invis
+block,13,4,0,0,invis,invis
+# text
+text,3,2.5,0,0,eastmost penninsula is the secret.,true
+#test player -- comment out when finished
+player,14,5,0,0
