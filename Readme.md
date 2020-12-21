@@ -1,6 +1,8 @@
 # CSE 3902 Game Project
 An implementation of [The Legend of Zelda](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)) (1986) in MonoGame for CSE 3902 at [The Ohio State University](https://www.osu.edu/).
 
+Please note that commit history has been removed as per the instructor's request. 
+
 ## Team Members
 - Anden Acitelli
 - Sonja Linton
