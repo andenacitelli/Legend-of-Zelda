@@ -1,7 +1,9 @@
 # CSE 3902 Game Project
 An implementation of [The Legend of Zelda](https://en.wikipedia.org/wiki/The_Legend_of_Zelda_(video_game)) (1986) in MonoGame for CSE 3902 at [The Ohio State University](https://www.osu.edu/).
 
-Please note that commit history has been removed as per the instructor's request. 
+**You can find a browser-playable version of our code at [https://mh15.github.io/LoZ/](https://mh15.github.io/LoZ/).** Please note that, as we had to split the codebase off to get a web version working, it is missing a few final fixes. However, it is only missing some very small bug fixes and is a great approximation of our game. 
+
+Lastly, please note that commit history has been removed as per the instructor's request. 
 
 ## Team Members
 - Anden Acitelli
